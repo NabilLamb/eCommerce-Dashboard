@@ -1,0 +1,71 @@
+/* Board.css */
+.board-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+.board-container>:nth-child(1){
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .react-kanban-board{
+    color: var(--grey); 
+} */
+
+.react-kanban-board>:nth-child(1){
+    width: 100%;
+}
+
+.react-kanban-board>:nth-child(2){
+    width: 24%;
+}
+
+
+.react-kanban-column {
+    border-radius: 8px;
+    background-color: rgba(41, 41, 41, 0.4);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.react-kanban-column>:nth-child(2)>div>div{
+    width: 100%;
+}
+
+.kanban-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--transparent-black);
+    padding: 1rem;
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+    border-radius: 5px;
+}
+
+.kanban-card>:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.remove-button, .update-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.column-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8px;
+}
+.column-header>svg{
+    cursor: pointer;
+}

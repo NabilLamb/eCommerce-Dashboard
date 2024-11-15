@@ -1,0 +1,114 @@
+.customRodal {
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.profileImageContainer {
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cameraButton {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(100%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  background-color: #868484;
+  border-radius: 50%;
+}
+
+/* .cameraButton svg {
+  margin-right: 10px;
+} */
+
+.fileInput {
+  display: none;
+}
+
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formColumn {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  flex: 1;
+  text-align: right;
+  margin-right: 10px; 
+}
+
+.input {
+  flex: 2;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.togglePasswordButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.saveButton {
+  background-color: #DE9611;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.saveButton:hover {
+  background-color: darkorange;
+}

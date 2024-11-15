@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items in the center vertically */
+    color: white;
+    padding: 20px; 
+}
+
+.container > div {
+    margin-top: 1rem; /* Adjusted margin for spacing */
+    width: 100%; /* Adjusted to full width */
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem; /* Added margin bottom for spacing */
+}
+
+.input, .fileInput, .textarea {
+    color: white;
+    font: inherit;
+    margin-top: 0.5rem; /* Adjusted margin for spacing */
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(98, 98, 98);
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    resize: none;
+}
+
+.textarea {
+    min-height: 200px; 
+}
+
+
+.imageWrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5rem; /* Adjusted margin for spacing */
+}
+
+.deleteButton {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.saveButton {
+    width: 6rem;
+    height: 2.5rem;
+    margin-top: 1rem; /* Adjusted margin for spacing */
+    background: var(--orange-gradient);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.saveButton:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

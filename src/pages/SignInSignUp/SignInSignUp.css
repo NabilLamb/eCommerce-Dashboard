@@ -1,0 +1,240 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(19, 35, 47, 0.5);
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('../../../public/background-form-signinsignup.jpg'); 
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+#auth-form {
+  background-color: rgba(19, 35, 47, 0.9);
+  padding: 44px;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  overflow-y: auto; 
+  max-height: 98vh; 
+}
+
+.file-label{
+  color: #8d959a;
+  margin-bottom: 10px;
+}
+
+input[type="file"]{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.form-field input[type="checkbox"] {
+  width: 20px; 
+  height: 25px;
+  margin: 10px; 
+  cursor: pointer;
+}
+
+.form-field input[type="checkbox"]:checked {
+  accent-color: #f24a02; 
+}
+
+.agreement{
+  margin: 7px 0 0 30px;
+
+}
+
+.tab-group-switch {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.tab-group-switch:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tab-group-switch li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.tab-group-switch li a:hover {
+  background: #d81800;
+  color: #ffffff;
+}
+
+.tab-group-switch .active a {
+  background: #f24a02;
+  color: #ffffff;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+
+#signup h1,
+#login h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.form-label {
+  position: absolute;
+  transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+}
+
+.form-label .req {
+  margin: 2px;
+  color: #f24a02;
+}
+
+.form-label.active {
+  transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+
+.form-label.highlight {
+  color: #ffffff;
+}
+
+.form-input,
+.form-textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: 0;
+  border-color: #f24a02;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 35px;
+  
+}
+
+.same-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.same-row > .form-field {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.same-row > .form-field:last-child {
+  margin: 0;
+}
+
+.btn {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #f24a02;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #d81800;
+}
+
+.btn-block {
+  display: block;
+  width: 30%;
+  margin: auto;
+  font-size: small;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #a0b3b0;
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 30px auto;
+  display: block;
+}
+
+.title {
+  margin: 0 auto 20px;
+  padding: 10px;
+  text-align: center;
+  width: max-content;
+  color: white;
+}
+
+.forgot-password {
+  margin-top: -20px;
+  text-align: right;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  color: #f24a02;
+}

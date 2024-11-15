@@ -1,0 +1,118 @@
+/* AddProductModal.module.css */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  min-width: 50%;
+  max-height: 100px;
+  position: relative; 
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+.gridItem > span {
+  margin-bottom: 10px;
+}
+
+.gridItem > input,
+.gridItem > select,
+.gridItem > textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.gridItem > select{
+  cursor: pointer;
+}
+
+.gridItem > textarea {
+  min-width: 60rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+  /* margin: 20px; */
+  margin-bottom: 30px;
+}
+
+.addButton {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  color: white;
+  background-color: grey;
+  width: 10rem;
+  height: 2rem;
+  position: absolute;
+  bottom: -35.5rem; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
+
+.addButtonActive {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.addButtonDisabled {
+  background-color: grey;
+}
+
+.req {
+  color: red;
+  margin-left: 5px;
+}
+
+/* Dark mode styles */
+.darkContainer {
+  background-color: #333;
+  color: #fff; /* Text color for dark mode */
+}
+
+.darkInput {
+  background-color: #333;
+  color: white;
+}
+
+.darkSelectOption {
+  background-color: #333;
+  color: white;
+}
+
+.darkTextarea {
+  background-color: #333;
+  color: white;
+}
+
+/* Light mode styles */
+.lightContainer {
+  background-color: #fff;
+  color: #000; /* Text color for light mode */
+}
+
+.lightInput {
+  background-color: #fff;
+  color: #000;
+}
+
+.lightOption {
+  background-color: #fff;
+  color: #000;
+}
+
+.lightTextarea {
+  background-color: #fff;
+  color: #000; /* Text color for light mode */
+}

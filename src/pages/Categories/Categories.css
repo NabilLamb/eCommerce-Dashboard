@@ -1,0 +1,86 @@
+.categories-container {
+    padding: 1rem;
+  }
+  
+  .table-container {
+    padding: 1rem;
+    overflow: auto;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .toolbar button {
+    background-color: #ffa748; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .toolbar button:hover {
+    background-color: #ffb96d; /* Darker green on hover */
+  }
+  
+  .toolbar button:active {
+    transform: scale(0.95); /* Slight scale down on click */
+  }
+  
+  .actions-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cell-text {
+    color: var(--text-color); /* Ensures text color adjusts based on theme */
+  }
+  
+  .read-more {
+    cursor: pointer;
+  }
+  
+  /* Default text color for dark theme */
+  body.theme-dark {
+    --text-color: white;
+  }
+  
+  /* Default text color for light theme */
+  body.theme-light {
+    --text-color: black;
+  }
+  
+  /* Apply text color globally */
+  body {
+    color: var(--text-color);
+  }
+  
+  /* Custom styles for Material-UI table */
+  .-theme-dark .MuiTable-root {
+    color: var(--text-color);
+  }
+  
+  .-theme-dark .MuiTableHead-root {
+    color: var(--text-color);
+  }
+  
+  .-theme-dark .MuiTableCell-root {
+    color: var(--text-color);
+  }
+  
+  .-theme-dark .MuiTablePagination-root {
+    color: var(--text-color);
+  }
+  

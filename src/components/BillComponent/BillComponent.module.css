@@ -1,0 +1,101 @@
+/* BillComponent.module.css */
+.invoice {
+  padding: 30px; /* Reduce padding for the entire invoice */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 60px; /* Smaller logo size */
+  height: 60px; /* Smaller logo size */
+}
+
+.companyInfo {
+  text-align: right;
+}
+
+.line {
+  border: 1px solid #ddd;
+  margin: 5px 0; /* Reduce margin top and bottom */
+}
+
+.customerOrderInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Reduce margin bottom */
+}
+
+.customerInfo,
+.orderInfo {
+  width: 48%;
+}
+
+.customerInfo h3 {
+  margin: 0 0 5px; /* Reduce margin bottom */
+}
+
+.tableContainer {
+  margin-bottom: 10px; /* Reduce margin bottom */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 6px; /* Reduce padding */
+  text-align: left;
+}
+
+.table th {
+  background-color: #f4f4f4;
+}
+
+/* .summary {
+  text-align: left;
+}
+
+.summary p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: bold;
+}
+
+.summary p .ta,
+.totalAmount {
+  font-size: 18px; 
+  font-weight: 700;
+  margin-top: 10px; 
+} */
+
+.totalttc {
+  text-align: left;
+}
+
+.totalttc p {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalttc p strong {
+  font-size: 18px; 
+  font-weight: 700;
+  margin-top: 10px; 
+}
+
+.totalttc p .numtotalttc {
+  font-size: large;
+  font-weight: bold;
+}

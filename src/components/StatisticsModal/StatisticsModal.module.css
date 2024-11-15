@@ -1,0 +1,11 @@
+/* Dark Mode */
+.container-statisticsChart.dark {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Light Mode */
+.container-statisticsChart.light {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}

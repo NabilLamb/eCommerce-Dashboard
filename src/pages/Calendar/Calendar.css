@@ -1,0 +1,54 @@
+/* Adjusted CSS for Calendar component */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem 0; 
+  box-sizing: border-box;
+  height: 80vh; ;
+}
+
+.calendar-container > div {
+  width: 90%;
+  height: 100%; 
+  padding: 0rem 2rem;
+  min-width: 900px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* Targeting table cells (td) within the FullCalendar */
+.fc td {
+  border-color: gray;
+}
+
+.fc-event {
+  background: var(--orange-gradient) !important;
+}
+
+.fc .fc-timegrid-slot {
+  height: 2.5rem !important;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .fc-v-event .fc-event-title,
+.light-mode .fc-timegrid-event .fc-event-time {
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .fc-v-event .fc-event-title,
+.dark-mode .fc-timegrid-event .fc-event-time {
+  color: white;
+}

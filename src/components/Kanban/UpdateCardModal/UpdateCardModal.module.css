@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: inherit; /* Will be set by theme */
+}
+
+.container > div {
+    margin-top: 2rem;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.input {
+    font: inherit;
+    margin-top: 12px;
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(98, 98, 98);
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    resize: none;
+}
+
+/* Dark mode styles */
+.darkMode {
+    color: white;
+}
+
+.darkMode .input {
+    color: white;
+    border: 1px solid rgb(98, 98, 98);
+}
+
+/* Light mode styles */
+.lightMode {
+    color: black;
+}
+
+.lightMode .input {
+    color: black;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.saveButton {
+    width: 6rem;
+    height: 2rem;
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    background: var(--orange-gradient);
+    color: white;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+.saveButton:disabled {
+    background: gray;
+    cursor: not-allowed;
+}

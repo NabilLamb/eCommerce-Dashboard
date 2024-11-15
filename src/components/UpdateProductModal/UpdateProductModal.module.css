@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* max-height: 90vh; */
+  min-height: 100vh;
+}
+
+.container.light {
+  color: black; /* Text color for light mode */
+}
+
+.container.dark {
+  color: white; /* Text color for dark mode */
+}
+
+.container > div {
+  margin-top: 2rem;
+  width: 48%;
+  position: relative; /* Ensure each div is positioned relative */
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.input, .fileInput, textarea {
+  font: inherit;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: block;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(98, 98, 98);
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  resize: none;
+}
+
+textarea {
+  min-height: 150px; 
+  /* min-width: 31rem; */
+}
+
+.container.dark .select, .container.dark select option {
+  color: white;
+  background-color: rgb(58, 58, 58);
+}
+
+.container.light .select, .container.light select option {
+  color: black;
+  background-color: white;
+}
+
+.container.dark textarea,  .container.dark input {
+  color: white; /* Text color for dark mode */
+}
+
+.container.light textarea, .container.light input {
+  color: black; /* Text color for light mode */
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.deleteButton {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.updateButton {
+  width: 10rem;
+  height: 2rem;
+  background: var(--orange-gradient);
+  color: white;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 5px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+}
+
+.addMessage {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.select {
+  color: black; /* Change text color to black */
+  background-color: white; /* Change background color to white */
+  font: inherit;
+  margin-top: 12px;
+  display: block;
+  outline: none;
+  border: 1px solid rgb(98, 98, 98);
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background-color: white; /* Change background color to white */
+  color: black; /* Change text color to black */
+}
+
+.req {
+  color: red;
+}
+
+.addButton {
+  position: absolute;
+  margin: 10px;
+  bottom: 5px; 
+  right: 0px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  color: white;
+  background-color: grey;
+  width: 10rem;
+  height: 2rem;
+  z-index: 1000; 
+}
+/* 
+.updateButton {
+  width: 10rem;
+  height: 2rem;
+  background: var(--orange-gradient);
+  color: white;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000; 
+} */
+

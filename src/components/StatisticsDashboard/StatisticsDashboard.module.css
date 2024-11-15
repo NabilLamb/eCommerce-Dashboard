@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    justify-content: space-between;
+}
+
+.cardGroup {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 55, 0, 0.7); /* Black transparent background */
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    flex: 1 1 200px; /* Flex grow, shrink, and basis for responsive design */
+    min-width: 200px; /* Ensure a minimum width for the group */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--grey);
+    gap: 0.5rem;
+}
+
+.card span:first-child {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card span:last-child {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.arrowIcon {
+    width: 2rem;
+    height: 2rem;
+    background: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIcon > svg {
+    width: 1.5em;
+    height: 1.5em;
+    color: black;
+}
+
+
+
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .cardGroup {
+        min-width: 100%; /* Ensure card groups take full width on smaller screens */
+    }
+}

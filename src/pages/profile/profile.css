@@ -1,0 +1,149 @@
+/* Default styles (assumed light mode) */
+
+.profile-container {
+  display: flex;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* color: #fff; */
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 30px 30px;
+  max-width: 1700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+h3 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 30rem;
+}
+
+.right-section {
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.themeLightContainer {
+  /* Light mode specific styles */
+  color: black;
+}
+
+.themeLightContainer h3 {
+  background-color: white;
+}
+
+.themeLightLeftSection {
+  /* Light mode specific styles */
+  background-color: aliceblue;
+}
+
+.themeLightRightSection {
+  /* Light mode specific styles */
+  background-color: #EDEDED;
+}
+
+/* Dark mode styles */
+
+.themeDarkContainer {
+  background-color: #333; /* Dark background color */
+}
+
+.themeDarkLeftSection {
+  background-color: #555; /* Dark background color */
+  color: #fff;
+}
+
+.themeDarkRightSection {
+  background-color: #444; /* Dark background color */
+  color: #fff;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.update-button {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.update-button button {
+  background: rgba(255, 166, 0, 0.804);
+  padding: 5px 10px; /* Adjust padding for better appearance */
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.update-button button:focus {
+  outline: none;
+}
+
+.update-button button svg {
+  margin-right: 5px;
+}
+
+.activity-info,
+.personal-info {
+  margin-bottom: 20px;
+}
+
+.actions-info {
+  width: 100%;
+}
+
+.actions-scroll {
+  max-height: 400px; /* Set max height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.actions-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.actions-info th,
+.actions-info td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.actions-info th {
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+
+.actions-info tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+}
+
+.password-toggle {
+  margin-left: 2rem;
+  cursor: pointer;
+}

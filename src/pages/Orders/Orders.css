@@ -1,0 +1,227 @@
+.table-container {
+    padding: 0 3rem 3rem 3rem;
+    overflow: auto;
+  }
+  
+  .table-container > :nth-child(2) {
+    border-radius: 10px !important;
+    overflow: hidden;
+  }
+  
+  .MuiTableRow-root,
+  .MuiTableCell-root {
+    border: none !important;
+  }
+  
+  .MuiTableRow-root {
+    height: 10px;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .toolbar button {
+    background-color: #ffa748;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .toolbar .excel {
+    display: flex;
+    align-items: center;
+    background-color: green; 
+  }
+  
+  .toolbar .excel button {
+    width: 4rem;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toolbar .excel button:hover {
+    background-color: #5abc5a; 
+  }
+  
+  .toolbar button:hover {
+    background-color: #ffb96d;
+  }
+  
+  .toolbar button:active {
+    transform: scale(0.95); 
+  }
+  
+  .toolbar button .MuiSvgIcon-root {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .view-items-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-items-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .radio-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-actions {
+    position: relative;
+  }
+  .modal-actions > button {
+    text-align: right;
+    margin-top: 1rem;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+    
+  }
+  
+  /* Adjustments for BillComponent integration */
+  .bill-container {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .bill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .bill-header-left {
+    font-size: 1.2rem;
+  }
+  
+  .bill-header-right {
+    font-size: 1.2rem;
+  }
+  
+  .bill-line {
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+  }
+  
+  .bill-section {
+    margin-bottom: 1rem;
+  }
+  
+  .bill-section-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bill-summary {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  /* Styling for Change Order Status Popup */
+  .order-status-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-status-popup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .radio-label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .radio-options input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .popup-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+  }
+  
+  .popup-actions button {
+    background-color: #5f5f5f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-actions button:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .popup-actions button:hover {
+    background-color: #5f5f5f;
+  }
+
+  .table-dark {
+    .MuiTableCell-root {
+       color: white!important;
+     }
+   }
+
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 0 1rem 1rem 1rem;
+    }
+  
+    .bill-container {
+      padding: 1rem;
+    }
+  
+    .order-status-popup {
+      width: 90%;
+      max-width: 350px;
+      padding: 1.5rem;
+    }
+  }
+  

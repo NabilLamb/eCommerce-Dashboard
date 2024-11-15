@@ -1,0 +1,57 @@
+/* index.css */
+:root {
+  --transparent-black: rgba(0, 0, 0, 0.294);
+  --black: #111111;
+  --grey: rgba(255, 255, 255, 0.597);
+  --orange: #ff805d;
+  --green: rgb(54, 234, 54);
+  --orange-gradient: linear-gradient(
+    268.35deg,
+    rgba(255, 70, 70, 0.99) 3.47%,
+    rgba(255, 114, 70, 0.99) 60.18%
+  );
+  --light-background: #ffffff;
+  --light-text: #000000;
+  --dark-background: #111111;
+  --dark-text: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#dashboard {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Public Sans", sans-serif;
+  overflow: hidden;
+}
+
+.light-mode {
+  background-color: var(--light-background);
+  color: var(--light-text);
+}
+
+.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+#dashboard {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.searchBar {
+  background-color: var(--search-bar-bg);
+}
+
+/* .profile:hover {
+  background-color: var(--profile-hover-bg);
+} */

@@ -1,0 +1,124 @@
+/* Common styles for both themes */
+.container {
+    width: 100%;
+    max-width: 130rem;
+    padding: 0rem 4rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .dashboard {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dashboardHead {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .head > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .durationButton > select {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .durationButton > select:hover {
+    background-color: #410000;
+    border-color: #f44336; 
+  }
+  
+  .durationButton > select:focus,
+  .durationButton > select:active {
+    outline: none;
+  }
+  
+  .durationButton > select option {
+    color: gray;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .cardHead > :nth-child(1) {
+    color: rgba(255, 255, 255, 0.835); /* Default color */
+  }
+  
+  .cardHead > :nth-child(2) {
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .cardAmount > :nth-child(1) {
+    font-size: 0.9rem;
+    color: gray;
+    position: relative;
+    bottom: 5px;
+  }
+  
+  .cardAmount > :nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .positiveChange {
+    font-weight: 900;
+  }
+  
+  .negativeChange {
+    font-weight: 900;
+  }
+  
+  /* Dark Mode */
+  .darkMode {
+    color: #fff; /* Dark mode text color */
+  
+    .cardHead > :nth-child(1) {
+      color: rgba(255, 255, 255, 0.835); /* Dark mode color for card titles */
+    }
+  }
+  
+  /* Light Mode */
+  .lightMode {
+    background-color: #ffffff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+  
+    .cardHead > :nth-child(1) {
+      color: rgba(130, 130, 130, 0.835); /* Light mode color for card titles */
+    }
+  }
+
+  .positiveChange {
+    color: #4CAF50; /* Green color for positive change in dark mode */
+  }
+
+  .negativeChange {
+    color: #f44336; /* Red color for negative change in dark mode */
+  }
+  

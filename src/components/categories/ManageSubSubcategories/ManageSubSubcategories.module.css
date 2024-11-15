@@ -1,0 +1,53 @@
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  background-color: #ffa748;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.toolbar button:hover {
+  background-color: #ffb96d;
+}
+
+.toolbar button:active {
+  transform: scale(0.95);
+}
+
+.toolbar button .MuiSvgIcon-root {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* dark/light mode */
+body.theme-dark {
+  --text-color: white;
+}
+
+body.theme-light {
+  --text-color: black;
+}
+
+body {
+  color: var(--text-color);
+}
+
+/* Custom styles for Material-UI table */
+.-theme-dark .MuiTableCell-root {
+  color: var(--text-color) !important;
+}
+
+.-theme-light .MuiTableCell-root {
+  color: var(--text-color) !important;
+}
+

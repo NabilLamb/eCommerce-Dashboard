@@ -1,0 +1,118 @@
+.container {
+  height: 100vh;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  transition: width 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--background-color);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container.themeDark {
+  --text-color: white;
+  --background-color: rgba(23, 23, 23, 0.8);
+}
+
+.container.themeLight {
+  --text-color: black;
+  --background-color: rgba(237, 237, 237, 0.8);
+}
+
+.container.collapsed {
+  width: 3rem;
+}
+
+.toggle {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.toggle:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+.toggle:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.5rem);
+  background-color: gray;
+  color: white;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  font-size: 0.6rem;
+  z-index: 1;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.collapsed .logo {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.menu {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.item {
+  color: var(--text-color);
+  transition: color 0.3s, opacity 0.3s, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-decoration: none;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.collapsed .item {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.item:hover {
+  color: #747474;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.active {
+  color: #ff6347;
+  transition: color 0.3s;
+  border-left: 4px solid orange;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  margin-right: 1rem;
+  transition: margin 0.3s ease, transform 0.3s ease;
+}
+
+.collapsed .icon {
+  margin: 0;
+  transform: scale(0.8);
+}

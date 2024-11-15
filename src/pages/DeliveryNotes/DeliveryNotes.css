@@ -1,0 +1,104 @@
+.table-container {
+  padding: 0 3rem 3rem 3rem;
+  overflow: auto;
+}
+
+.table-container > :nth-child(2) {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.MuiTableRow-root,
+.MuiTableCell-root {
+  border: none !important;
+}
+
+.MuiTableRow-root {
+  height: 10px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  background-color: #ffa748;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+  background-color: #ff8c1a;
+}
+
+.view-items-btn {
+  background-color: #007bff !important;
+  color: white !important;
+  text-transform: lowercase !important;
+  /* border: none !important; */
+  font-size: 12px !important;
+  padding: 0.5rem !important;
+  cursor: pointer !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.view-items-btn:hover {
+  background-color: #0056b3;
+}
+
+.MuiIconButton-root {
+  padding: 10px;
+}
+
+.MuiDialogContent-root {
+  padding: 16px;
+}
+
+/* dialogStyles.css */
+
+.dialog-title.light-theme {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.dialog-title.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dialog-content.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+.dialog-content.dark-theme {
+  background-color: #424242;
+  color: #fff !important;
+}
+
+/* .table-container.light-theme {
+  background-color: #fff;
+  color: #000;
+} */
+
+.table-container.dark-theme {
+  background-color: #424242;
+  color: #fff !important;
+}
+
+/* Ensuring MUI TableCell text color adjusts */
+.dialog-content.dark-theme .MuiTableCell-root {
+  color: #fff !important;
+}
+
+.dialog-content.light-theme .MuiTableCell-root {
+  color: #000 !important;
+}

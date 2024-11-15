@@ -1,0 +1,75 @@
+/* AddModal.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.container > div {
+  margin-top: 2rem;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.input,
+.fileInput {
+  font: inherit;
+  margin-top: 12px;
+  display: block;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(98, 98, 98);
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  resize: none;
+}
+
+.textarea {
+  min-height: 200px;
+}
+
+.saveButton {
+  width: 6rem;
+  height: 2rem;
+  align-self: center;
+  margin-top: 1.5rem;
+  background: var(--orange-gradient);
+  color: white;
+  cursor: pointer;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
+.saveButton:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.disabledButton {
+  background: gray !important;
+}
+
+.addMessage {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.lightLabel {
+  color: black;
+}
+
+.darkInput {
+  color: white;
+}
+
+.darkButton {
+  background-color: #333;
+}

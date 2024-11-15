@@ -1,0 +1,75 @@
+/* ImageViewer.module.css */
+
+.imageViewer {
+  display: inline-block;
+  margin: 5px;
+}
+
+.profileImageSmall {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profileImageLarge {
+  width: 150px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.largeThumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  outline: none;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.largeImage {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.closeButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

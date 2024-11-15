@@ -1,0 +1,14 @@
+.table-container{
+    padding: 0 5rem 3rem 5rem;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.table-container>:nth-child(1){
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.MuiTableRow-root, .MuiTableCell-root{
+    border: none !important;
+}

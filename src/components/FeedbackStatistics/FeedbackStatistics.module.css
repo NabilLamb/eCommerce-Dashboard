@@ -1,0 +1,73 @@
+/* FeedbackStatistics.module.css */
+.mapContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: calc(100% - 500px);
+  width: 100%;
+  margin-top: 20px;
+}
+/* .feedbackContainer {
+    margin-top: 10px;
+    width: 100%;
+
+  } */
+  
+
+  .feedbackTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .feedbackTable th,
+  .feedbackTable td {
+    border: 1px solid #eee; 
+    padding: 10px;
+    text-align: left;
+    background-color: var(--background-color); /* Use CSS variable */
+  color: var(--text-color); /* Use CSS variable */
+  }
+  
+  .feedbackTable th {
+    background-color: var(--header-background-color); /* Use CSS variable */
+  color: var(--header-text-color); /* Use CSS variable */
+  }
+  
+  /* .feedbackTable td {
+    background-color: #272727;
+  }
+  
+  .feedbackItem:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+
+  .feedbackItem:nth-child(even) {
+    background-color: var(--row-background-color); /* Use CSS variable */
+  }
+  
+  .comment {
+    font-size: 14px;
+  }
+  
+  .rating {
+    font-size: 15px;
+    color: #ffa500 !important;
+    width: 20%;
+  }
+  
+  /* Custom style for the stars */
+  .starContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* .star {
+    color: #ffa500;
+  } */
+  
+  .ratingNumber {
+    margin-left: 5px;
+  }
+  
+ 
+

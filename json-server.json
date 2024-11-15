@@ -1,0 +1,8 @@
+{
+    "port": 3000,
+    "watch": true,
+    "routes": {
+      "/world-110m.json": "/world-110m"
+    }
+  }
+  

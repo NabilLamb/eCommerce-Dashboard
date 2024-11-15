@@ -1,0 +1,73 @@
+/* Default text color for dark theme */
+body.theme-dark {
+  --text-color: white;
+}
+
+/* Default text color for light theme */
+body.theme-light {
+  --text-color: black;
+}
+
+/* Apply text color globally */
+body {
+  color: var(--text-color);
+}
+
+
+.table-container {
+    padding: 0 3rem 3rem 3rem;
+    overflow: auto;
+}
+
+.table-container>:nth-child(2){
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.MuiTableRow-root, .MuiTableCell-root{
+    border: none !important;
+}
+
+.MuiTableRow-root {
+    height: 10px;
+  }
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  background-color: #ffa748; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.toolbar button:hover {
+  background-color: #ffb96d; /* Darker green on hover */
+}
+
+.toolbar button:active {
+  transform: scale(0.95); /* Slight scale down on click */
+}
+
+.toolbar button .MuiSvgIcon-root {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.read-more{
+  cursor: pointer;
+}
