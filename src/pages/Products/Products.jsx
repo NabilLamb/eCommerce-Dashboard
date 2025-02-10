@@ -14,7 +14,7 @@ import StatisticsModal from "../../components/StatisticsModal/StatisticsModal";
 import ThemeContext from "../../components/ThemeContext/ThemeContext";
 import { useTranslation } from "react-i18next";
 
-const defaultImage = "../../../public/default-image.png";
+const defaultImage = "/default-image.png";
 
 const Products = () => {
   const [products, setProducts] = useState(productsData);
@@ -32,25 +32,6 @@ const Products = () => {
   const { themeMode } = useContext(ThemeContext);
 
   const { t } = useTranslation();
-
-  // const renderCell = (value) => {
-  //   if (value && value.length > 50) {
-  //     const truncatedText = value.substring(0, 50) + "...";
-  //     return (
-  //       <span className="cell-text">
-  //         {truncatedText}{" "}
-  //         <span
-  //           className="read-more"
-  //           onClick={() => handleExpandDescription(value)}
-  //         >
-  //           (Read more)
-  //         </span>
-  //       </span>
-  //     );
-  //   } else {
-  //     return <span className="cell-text">{value}</span>;
-  //   }
-  // };
 
   const handleExpandDescription = (value) => {
     setExpandedDescription(value);
