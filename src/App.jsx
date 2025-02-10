@@ -10,7 +10,7 @@ import Categories from "./pages/Categories/Categories";
 import ManageSubcategories from "./components/categories/ManageSubcategories/ManageSubcategories";
 import ManageSubSubcategories from "./components/categories/ManageSubSubcategories/ManageSubSubcategories";
 import Orders from "./pages/Orders/Orders";
-import DeliveryNotes from "./pages/deliveryNotes/deliveryNotes";
+import DeliveryNotes from "./pages/DeliveryNotes/DeliveryNotes";
 import Profile from "./pages/profile/profile";
 import SignInSignUp from "./pages/SignInSignUp/SignInSignUp"; 
 import { UserProvider } from "./components/UserContext/UserContext";
