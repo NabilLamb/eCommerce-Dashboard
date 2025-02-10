@@ -2,11 +2,11 @@ import React, { useContext, useState, useEffect } from 'react';
 import { adminActions } from '../../data/index';
 import { FaEdit, FaEye, FaEyeSlash } from 'react-icons/fa';
 import UpdateProfile from '../../components/UpdateProfile/UpdateProfile';
-import './Profile.css';
 import ThemeContext from '../../components/ThemeContext/ThemeContext';
 import { UserContext } from '../../components/UserContext/UserContext';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import "./profile.css";
 
 const Profile = () => {
   const { t } = useTranslation();
